@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  def new
+  def index
   end
 
   def show
@@ -7,4 +7,6 @@ class UsersController < ApplicationController
 
   def edit
   end
+
+
 end

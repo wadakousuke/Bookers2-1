@@ -1,2 +1,20 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+      <h2>Editing Book</h2>
+        <%= form_with model: @book, method: :patch do |f| %>
+         <div class="form-group">
+           <label for="inputTitle">Title</label>
+          <div><%= f.text_field :title, autofocus: true, id:"inputTitle" %></div>
+         </div>
+          <div class="form-group">
+            <label for="inputbody">Opnion</label>
+            <div><%= f.text_area :body, id:"inputbody" %></div>
+          </div>
+          <div class="form-group">
+            <%= f.submit "update Book" %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>

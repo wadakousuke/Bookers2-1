@@ -19,8 +19,8 @@
        <% @books.each do |book| %>
         <tr>
           <td><%= image_tag book.user.get_profile_image(100,100) %></td>
-          <td><a href="/books/<%= @user.id %>"><%= book.title %></a></td>
-          <td><%= book.body %></td>
+          <td></td>
+          <td></td>
        <% end %>
       </tbody>
     </table>

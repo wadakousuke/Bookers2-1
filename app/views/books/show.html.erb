@@ -1,3 +1,4 @@
+<%= render "layouts/notice", book: @book %>
 <div class="container px-5 px-sm-0">
   <div class="row">
     <div class="col-md-3">
@@ -22,7 +23,7 @@
           <td><%= @book.body %></td>
           <% if @book.user == current_user %>
           <td><%= link_to "Edit", edit_book_path(@book.id) , class: "btn btn-sm btn-success " %></td>
-          <td><%= link_to "Destroy", books_path(@book), method: :delete, "date-confirm" => "本当に削除しますか？"  , class: "btn btn-sm btn-danger " %></td>
+          <td><td><%= link_to "Destroy", "/books/#{@book.id}", method: :delete, "date-confirm" => "本当に削除しますか" ,class: "btn btn-sm btn-danger " %></td>
           <% end %>
         </tr>
     </table>

@@ -34,7 +34,7 @@
          <%= link_to "Books" , books_path, class: "nav-link text-light fas fa-book-open" %>
         </li>
         <li class="nav-item">
-         <%= link_to "Log out" , destroy_user_session_path, method: :delete, class: "nav-link text-light fas fa-sign-out" %>
+         <%= link_to "Log out" , destroy_user_session_path, method: :delete, class: "nav-link text-light fas fa-sign-out-alt" %>
         </li>
 
       <% else %>
@@ -49,7 +49,7 @@
          <%= link_to "Sign up" , new_user_registration_path, class: "nav-link text-light fas fa-user-plus"%>
         </li>
         <li class="nav-item">
-         <%= link_to "Log in" , new_user_session_path, class: "nav-link text-light fas fa-sign-in"%>
+         <%= link_to "Log in" , new_user_session_path, class: "nav-link text-light fas fa-sign-in-alt"%>
         </li>
        <% end %>
         </ul>
